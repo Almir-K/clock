@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 201, 199);
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  background-color: lightpink;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+  transition: background 2s ease; /* Add a transition for the background */
+}
+
+.hour,
+.minute,
+.second {
+  position: absolute;
+  transform-origin: 50% 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add shadow to hands */
+}
+
+.hour {
+  height: 70px;
+  width: 4px;
+  background-color: #444141;
+  border-radius: 2px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+
+.minute {
+  height: 78px;
+  border-radius: 3px;
+  width: 2px;
+  background-color: #444141;
+  top: 21px;
+  transform: rotate(30deg);
+}
+
+.second {
+  border-radius: 1px;
+  height: 80px;
+  width: 1px;
+  background-color: red;
+  top: 18px;
+  transform: rotate(-60deg);
+}
+
+/* Style for clock numbers */
+.number {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  position: absolute;
+  color: #444141;
+  font-size: 20px;
+  font-weight: bold;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
+.number1 {
+  top: 18px;
+  left: 150px;
+}
+.number2 {
+  top: 50px;
+  left: 178px;
+}
+.number3 {
+  top: 44%;
+  left: 185px;
+}
+.number4 {
+  top: 128px;
+  left: 175px;
+}
+.number5 {
+  top: 160px;
+  left: 148px;
+}
+.number6 {
+  bottom: 3px;
+  left: 49%;
+}
+.number7 {
+  top: 160px;
+  right: 140px;
+}
+.number8 {
+  top: 128px;
+  right: 165px;
+}
+.number9 {
+  top: 44%;
+  left: 15px;
+}
+.number10 {
+  top: 50px;
+  right: 152px;
+}
+.number11 {
+  top: 18px;
+  right: 125px;
+}
+.number12 {
+  top: 5px;
+  left: 50%;
+}
